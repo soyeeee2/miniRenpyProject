@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/test.rpy", line 58: Line is indented, but the preceding statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    attribute blush default:
+    ^
+
+Ren'Py Version: Ren'Py 8.1.1.23060707
+Thu Aug  3 22:22:39 2023

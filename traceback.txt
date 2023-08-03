@@ -1,0 +1,33 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 77, in script
+    "{bt=10}{sc=5}나는 {color="#fff"}아이엠{/color}{/sc}{/bt}"
+Exception: Open text tag at end of string '{bt=10}{sc=5}나는 {color='.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 77, in script
+    "{bt=10}{sc=5}나는 {color="#fff"}아이엠{/color}{/sc}{/bt}"
+  File "C:\Users\Soyee\Downloads\renpy-8.1.1-sdk\renpy\ast.py", line 930, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Soyee\Downloads\renpy-8.1.1-sdk\renpy\exports.py", line 1473, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\Soyee\Downloads\renpy-8.1.1-sdk\renpy\character.py", line 1352, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\Soyee\Downloads\renpy-8.1.1-sdk\renpy\character.py", line 1003, in do_display
+    display_say(who,
+  File "C:\Users\Soyee\Downloads\renpy-8.1.1-sdk\renpy\character.py", line 674, in display_say
+    what_text.update()
+  File "C:\Users\Soyee\Downloads\renpy-8.1.1-sdk\renpy\text\text.py", line 1865, in update
+    tokens = self.tokenize(text)
+  File "C:\Users\Soyee\Downloads\renpy-8.1.1-sdk\renpy\text\text.py", line 2345, in tokenize
+    tokens.extend(textsupport.tokenize(i))
+  File "textsupport.pyx", line 169, in renpy.text.textsupport.tokenize
+Exception: Open text tag at end of string '{bt=10}{sc=5}나는 {color='.
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.1.1.23060707
+RenpyStart 1.0
+Thu Aug  3 22:38:31 2023
